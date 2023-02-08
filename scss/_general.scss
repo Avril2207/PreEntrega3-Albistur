@@ -1,0 +1,36 @@
+/* NAVBAR */
+nav {
+  background-color: rgba(247, 175, 150, 0.803);
+}
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+  padding: 13px 0px;
+  text-align: center;
+
+  .footer-sm-icons {
+    background-color: rgba(128, 128, 128, 0.581);
+    color: white;
+  }
+  .sm-text {
+    font-size: 20px;
+    padding: 15px;
+  }
+  .sm {
+    color: white;
+    padding: 15px;
+    font-size: 25px;
+  }
+  @media (min-width: 1023px) {
+    .footer-sm-icons {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}

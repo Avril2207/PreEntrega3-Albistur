@@ -1,0 +1,58 @@
+/* NAVBAR */
+nav {
+  background-color: rgba(247, 175, 150, 0.803);
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+  padding: 13px 0px;
+  text-align: center;
+}
+footer .footer-sm-icons {
+  background-color: rgba(128, 128, 128, 0.581);
+  color: white;
+}
+footer .sm-text {
+  font-size: 20px;
+  padding: 15px;
+}
+footer .sm {
+  color: white;
+  padding: 15px;
+  font-size: 25px;
+}
+@media (min-width: 1023px) {
+  footer .footer-sm-icons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
+.container {
+  text-align: center;
+}
+.container .title {
+  font-family: "Anton", sans-serif;
+  text-align: center;
+}
+.container .image {
+  width: 90%;
+  height: 90%;
+  transition: 0.8s;
+}
+.container .image:hover {
+  transform: scale(1.1, 1.1);
+}
+.container .productos {
+  background-color: bisque;
+}
+
+/*# sourceMappingURL=style.css.map */
