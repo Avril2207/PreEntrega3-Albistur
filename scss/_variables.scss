@@ -1,2 +1,7 @@
 $tipografia: "Anton", sans-serif;
 $bg: #ffc1bf;
+@mixin fotos($dis, $corte, $m-w) {
+  display: $dis;
+  flex-wrap: $corte;
+  max-width: $m-w;
+}

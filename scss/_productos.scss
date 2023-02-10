@@ -1,0 +1,79 @@
+.section {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4 auto);
+  grid-gap: 10px;
+  grid-template-areas:
+    "titulo"
+    "tortas"
+    "cupecakes"
+    "cakepops";
+  .title_productos {
+    font-family: $tipografia;
+    grid-area: titulo;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 60px;
+  }
+  .cakes {
+    grid-area: tortas;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .cupecakes {
+    grid-area: cupecakes;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .cakepops {
+    grid-area: cakepops;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .picture {
+    width: 70%;
+    padding: 5px 0px;
+  }
+  .subtitle {
+    font-family: $tipografia;
+    padding: 55px 0px;
+    font-size: 35px;
+  }
+}
+/* RESPONSIVE */
+@media (min-width: 760px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+
+    .picture {
+      width: 40%;
+    }
+  }
+}
+@media (min-width: 1023px) {
+  .section {
+    text-align: center;
+
+    .cakes {
+      @include fotos(flex, wrap, 100%);
+    }
+    .cupecakes {
+      @include fotos(flex, wrap, 100%);
+    }
+    .cakepops {
+      @include fotos(flex, wrap, 100%);
+    }
+    .picture {
+      max-width: 250px;
+      padding: 20px 30px;
+    }
+    .subtitle {
+      text-align: center;
+    }
+  }
+}

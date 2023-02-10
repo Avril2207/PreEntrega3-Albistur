@@ -72,4 +72,85 @@ header {
   font-size: 20px;
 }
 
+.section {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4 auto);
+  grid-gap: 10px;
+  grid-template-areas: "titulo" "tortas" "cupecakes" "cakepops";
+}
+.section .title_productos {
+  font-family: "Anton", sans-serif;
+  grid-area: titulo;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 60px;
+}
+.section .cakes {
+  grid-area: tortas;
+  text-align: center;
+  margin-top: 20px;
+}
+.section .cupecakes {
+  grid-area: cupecakes;
+  text-align: center;
+  margin-top: 50px;
+}
+.section .cakepops {
+  grid-area: cakepops;
+  text-align: center;
+  margin-top: 50px;
+}
+.section .picture {
+  width: 70%;
+  padding: 5px 0px;
+}
+.section .subtitle {
+  font-family: "Anton", sans-serif;
+  padding: 55px 0px;
+  font-size: 35px;
+}
+
+/* RESPONSIVE */
+@media (min-width: 760px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .section .picture {
+    width: 40%;
+  }
+}
+@media (min-width: 1023px) {
+  .section {
+    text-align: center;
+  }
+  .section .cakes {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .section .cupecakes {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .section .cakepops {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .section .picture {
+    max-width: 250px;
+    padding: 20px 30px;
+  }
+  .section .subtitle {
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
