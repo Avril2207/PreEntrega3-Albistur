@@ -1,0 +1,29 @@
+.FAQ_title {
+  font-family: $tipografia;
+  margin-top: 30px;
+  text-align: center;
+}
+.FAQ {
+  padding: 30px 15px;
+
+  .preguntas {
+    border-style: solid;
+
+    .FAQ_subtitle {
+      font-family: $tipografia;
+      border-bottom-style: solid;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .h3 {
+      padding: 10px 0px;
+    }
+  }
+  .respuestas {
+    border-style: solid;
+
+    .respuesta {
+      font-size: 20px;
+    }
+  }
+}

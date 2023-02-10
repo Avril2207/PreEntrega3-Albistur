@@ -152,5 +152,32 @@ header {
     text-align: center;
   }
 }
+.FAQ_title {
+  font-family: "Anton", sans-serif;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.FAQ {
+  padding: 30px 15px;
+}
+.FAQ .preguntas {
+  border-style: solid;
+}
+.FAQ .preguntas .FAQ_subtitle {
+  font-family: "Anton", sans-serif;
+  border-bottom-style: solid;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.FAQ .preguntas .h3 {
+  padding: 10px 0px;
+}
+.FAQ .respuestas {
+  border-style: solid;
+}
+.FAQ .respuestas .respuesta {
+  font-size: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */
