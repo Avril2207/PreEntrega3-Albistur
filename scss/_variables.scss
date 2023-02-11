@@ -5,3 +5,8 @@ $bg: #ffc1bf;
   flex-wrap: $corte;
   max-width: $m-w;
 }
+@mixin secciones($area, $align, $m-t) {
+  grid-area: $area;
+  text-align: $align;
+  margin-top: $m-t;
+}

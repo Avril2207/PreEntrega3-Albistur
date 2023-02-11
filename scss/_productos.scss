@@ -17,28 +17,22 @@
     font-size: 60px;
   }
   .cakes {
-    grid-area: tortas;
-    text-align: center;
-    margin-top: 20px;
+    @include secciones(tortas, center, 50px);
   }
   .cupecakes {
-    grid-area: cupecakes;
-    text-align: center;
-    margin-top: 50px;
+    @include secciones(cupecakes, center, 50px);
   }
   .cakepops {
-    grid-area: cakepops;
-    text-align: center;
-    margin-top: 50px;
-  }
-  .picture {
-    width: 70%;
-    padding: 5px 0px;
+    @include secciones(cakepops, center, 50px);
   }
   .subtitle {
     font-family: $tipografia;
     padding: 55px 0px;
     font-size: 35px;
+  }
+  .picture {
+    width: 70%;
+    padding: 5px 0px;
   }
 }
 /* RESPONSIVE */
