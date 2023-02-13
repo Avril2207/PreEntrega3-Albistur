@@ -1,7 +1,7 @@
 {
   "name": "preentrega3-albistur",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pre entrega numero 3. página de repostría",
   "main": "index.js",
   "scripts": {
     "compile": "sass --watch scss:css"
